@@ -1,5 +1,35 @@
 @import "tailwindcss";
 
+:root {
+  --color-primary: 255, 0, 0; /* Red */
+  --color-secondary: 0, 255, 0; /* Green */
+  --color-gray-50: 249, 250, 251;
+  --color-gray-100: 243, 244, 246;
+  --color-gray-200: 229, 231, 235;
+  --color-gray-900: 17, 24, 39;
+}
+
+/* 🌙 Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: 200, 50, 50; /* Darker Red */
+    --color-secondary: 50, 200, 50; /* Darker Green */
+    --color-gray-50: 31, 41, 55;
+    --color-gray-100: 17, 24, 39;
+    --color-gray-900: 255, 255, 255;
+  }
+}
+
+/* 🌙 Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: 200, 50, 50; /* Darker Red */
+    --color-secondary: 50, 200, 50; /* Darker Green */
+    --color-gray-100: 31, 41, 55;
+    --color-gray-900: 255, 255, 255;
+  }
+}
+
 @layer utilities {
     @keyframes spotlight {
       0% {
@@ -26,4 +56,3 @@
   .no-visible-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  
